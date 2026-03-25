@@ -1,0 +1,96 @@
+/* 🔹 1. Custom Color Scheme */
+:root {
+  --primary: #4e73df;
+  --secondary: #1cc88a;
+  --background: #f8f9fc;
+  --text: #333;
+}
+
+/* 🔹 2. Custom Font */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3); /* 🔹 5. Gradient */
+  margin: 0;
+  padding: 0;
+}
+
+/* 🔹 Card Styling */
+.card {
+  border-radius: 15px;
+  border: none;
+
+  /* 🔹 4. Box Shadow */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+  /* 🔹 7. Smooth Transition */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on card */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 Buttons */
+.btn {
+  border-radius: 10px;
+
+  /* 🔹 7. Smooth transitions */
+  transition: all 0.3s ease;
+}
+
+/* 🔹 3. Hover effects */
+.btn-primary:hover {
+  background-color: #2e59d9;
+}
+
+.btn-success:hover {
+  background-color: #17a673;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* 🔹 Links */
+a {
+  text-decoration: none;
+  color: var(--primary);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2e59d9;
+}
+
+/* 🔹 Input Fields */
+.form-control {
+  border-radius: 10px;
+  padding: 10px;
+
+  /* 🔹 6. Custom spacing */
+  margin-bottom: 10px;
+
+  transition: 0.3s;
+}
+
+.form-control:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 8px rgba(78, 115, 223, 0.4);
+}
+
+/* 🔹 Headings */
+h3, h4 {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Center alignment tweaks */
+.container {
+  padding: 20px;
+}
