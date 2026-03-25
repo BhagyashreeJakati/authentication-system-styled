@@ -68,13 +68,13 @@ if (user) {
   document.querySelector("h2").innerText = "Welcome " + user.name + " 👋";
 } else {
   // If no user, go back to login
-  window.location.href = "login.html";
+  window.location.href = "index.html";
 }
 
 // Logout function
 function logout() {
   localStorage.removeItem("user");
-  window.location.href = "login.html";
+  window.location.href = "index.html";
 }
 </script>
 
